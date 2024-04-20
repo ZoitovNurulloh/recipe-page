@@ -48,6 +48,22 @@
 
 /* CUSTOM PROPS */
 
+:root {
+  /* FONTS */
+  --body-font: "Outfit", "Arial", sans-serif;
+  --heading-font: "Young Serif", "Arial", sans-serif;
+
+  /* COLORS */
+  --wenge-brown:#5f564d;
+  --snow:#fff7fb;
+  --dark-chorocoal:#312e2c;
+  --dark-raspberry:#7a284e;
+  --brandy-red:#854632;
+  --eggshell:#f3e5d7;
+  --white-coffee:#e3ddd7;
+}
+
+
 
 /* GLOBAL */
 
@@ -67,11 +83,11 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  background-color: #fff;
+  background-color: var(--eggshell);
   color: #222;
-  font-family: "Arial", sans-serif;
+  font-family: var(--body-font);
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 150%;
 }
 
 img {
