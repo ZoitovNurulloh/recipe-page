@@ -145,6 +145,43 @@ input:-webkit-autofill:focus {
   flex-grow: 1;
 }
 
+/* CARD */
+
+
+
+.card-recipe__heading {
+  margin: 0;
+  margin-bottom: 24px;
+  font-family: var(--heading-font);
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  color: var(--dark-chorcoal);
+}
+
+.card-recipe__description {
+  margin-bottom: 32px;
+}.card-recipe {
+  width: 100%;
+  max-width: 736px;
+  margin-top: 123px;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 24px;
+}
+
+.card-recipe__img {
+  display: block;
+  width: 656px;
+  height: 300px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+}
+
+.card-recipe__info{
+  margin-bottom: 32px;
+}
+
 
 
 /* RETINA BACKGROUND IMAGES */
