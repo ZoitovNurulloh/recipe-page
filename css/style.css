@@ -212,6 +212,38 @@ input:-webkit-autofill:focus {
   margin-bottom: 8px;
 }
 
+/* CARD RECIPE INGREDIENTS*/
+
+.card-recipe__ingredients {
+  margin-bottom: 32px;
+}
+
+.card-recipe__ingredients-inner {
+  border-bottom:1px solid rgb(227, 221, 215);
+}
+
+.card-recipe__ingredients-heading {
+  font-family: var(--heading-font);
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 28px;
+  color:var(--brandy-red);
+  margin-bottom: 24px;
+}
+
+.card-recipe__ingredients-list {
+  padding-left: 20px;
+  margin-bottom: 32px;
+}
+
+.card-recipe__ingredients-item {
+  padding-left: 20px;
+}
+
+.card-recipe__ingredients-item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
 
 
 /* RETINA BACKGROUND IMAGES */
