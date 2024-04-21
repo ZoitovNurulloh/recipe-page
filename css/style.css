@@ -2,7 +2,6 @@
   padding: 0;
   margin: 0;
   border: 0;
-  list-style: none;
   text-decoration: none;
 }
 
@@ -56,7 +55,7 @@
   /* COLORS */
   --wenge-brown:#5f564d;
   --snow:#fff7fb;
-  --dark-chorocoal:#312e2c;
+  --dark-chorcoal:#312e2c;
   --dark-raspberry:#7a284e;
   --brandy-red:#854632;
   --eggshell:#f3e5d7;
@@ -81,10 +80,9 @@ html {
 
 body {
   display: flex;
-  flex-direction: column;
-  height: 100%;
+  justify-content: center;
   background-color: var(--eggshell);
-  color: #222;
+  color: var(--wenge-brown);
   font-family: var(--body-font);
   font-size: 16px;
   line-height: 150%;
@@ -93,17 +91,6 @@ body {
 img {
   max-width: 100%;
   height: auto;
-}
-
-/* CONTAINER */
-
-.container {
-  width: 100%;
-  max-width: 1200px;
-  padding-left: 50px;
-  padding-right: 50px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 
@@ -244,6 +231,53 @@ input:-webkit-autofill:focus {
   margin-bottom: 8px;
 }
 
+/* CARD RECIPE INSTRUCTIONS */
+
+.card-recipe__instructions {
+  margin-bottom: 32px;
+}
+
+.card-recipe__instructions-inner {
+  border-bottom:1px solid rgb(227, 221, 215);
+}
+
+.card-recipe__instructions-heading {
+  font-family: var(--heading-font);
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 28px;
+  margin-bottom: 24px;
+  color: var(--brandy-red);
+}
+
+.card-recipe__instructions-list {
+  margin-bottom: 32px;
+  list-style: none;
+  counter-reset: instruction-item;
+}
+
+.card-recipe__instructions-item {
+  display: flex;
+  counter-increment: instruction-item;
+}
+
+.card-recipe__instructions-item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.card-recipe__instructions-item::before {
+  content: counter(instruction-item);
+  font-weight: 700;
+  margin-right: 24px;
+}
+
+.card-recipe__instructions-text {
+  flex-grow: 1;
+}
+
+.card-recipe__instructions-bold {
+  font-weight: 700;
+}
 
 
 /* RETINA BACKGROUND IMAGES */
