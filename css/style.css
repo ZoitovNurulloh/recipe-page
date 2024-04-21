@@ -182,6 +182,36 @@ input:-webkit-autofill:focus {
   margin-bottom: 32px;
 }
 
+/* CARD RECIPE TIME */
+
+.card-recipe__time {
+  background-color: var(--snow);
+  padding: 28px;
+  border-radius: 12px;
+  margin-bottom: 32px;
+}
+
+.card-recipe__time-heading {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+  margin-bottom: 16px;
+  color: var(--dark-raspberry);
+}
+
+.card-recipe__time-list {
+  padding-left: 24px ;
+}
+
+.card-recipe__time-item {
+  padding-left: 12px;
+
+}
+
+.card-recipe__time-item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
 
 
 /* RETINA BACKGROUND IMAGES */
