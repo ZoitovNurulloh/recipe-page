@@ -135,7 +135,6 @@ input:-webkit-autofill:focus {
 /* CARD */
 
 
-
 .card-recipe__heading {
   margin: 0;
   margin-bottom: 24px;
@@ -163,10 +162,6 @@ input:-webkit-autofill:focus {
   height: 300px;
   border-radius: 12px;
   margin-bottom: 40px;
-}
-
-.card-recipe__info{
-  margin-bottom: 32px;
 }
 
 /* CARD RECIPE TIME */
@@ -266,9 +261,12 @@ input:-webkit-autofill:focus {
 }
 
 .card-recipe__instructions-item::before {
-  content: counter(instruction-item);
+  margin: 0;
+  margin-right: 16px;
+  max-width: 24px;
+  width: 100%;
+  content: counter(instruction-item) ".";
   font-weight: 700;
-  margin-right: 24px;
 }
 
 .card-recipe__instructions-text {
@@ -277,6 +275,56 @@ input:-webkit-autofill:focus {
 
 .card-recipe__instructions-bold {
   font-weight: 700;
+}
+
+
+/* CARD-RECIPE__NUTRITON */
+.card-recipe__nutrition {
+}
+.card-recipe__nutrition-heading {
+  margin-bottom: 24px;
+  font-family: var(--heading-font);
+  font-size: 28px;
+  line-height: 28px;
+}
+
+.card-recipe__nutrition-description {
+  margin-bottom: 24px;
+}
+
+.card-recipe__nutrition-table {
+  width: 100%;
+  text-align: left;
+}
+
+.card-recipe__nutrition-row {
+  display: flex;
+  padding-left: 32px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.card-recipe__nutrition-row:not(:last-child) {
+  border-bottom:1px solid var(--white-coffee);
+}
+
+.card-recipe__nutrition-row:first-child {
+  padding-top: 0;
+}
+
+.card-recipe__nutrition-row:last-child {
+  padding-bottom: 0;
+}
+
+.card-recipe__nutrition-title {
+  font-weight: 400;
+  width: 50%;
+}
+
+.card-recipe__nutrition-info {
+  font-weight: 700;
+  width: 50%;
+  color: var(--brandy-red);
 }
 
 
